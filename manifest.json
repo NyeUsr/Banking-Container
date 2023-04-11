@@ -1,0 +1,30 @@
+    {
+        "manifest_version": 2,
+        "name": "Banking Container",
+        "version": "1.0.1",
+        "description": "Easily isolate your banking activity for increased security.",
+        "icons": {
+		"128": "icon.png"
+        },
+        "applications": {
+            "gecko": {
+                "id": "@bank-container"
+            }
+        },
+        "permissions": [
+            "<all_urls>",
+            "browsingData",
+            "contextualIdentities",
+            "cookies",
+            "management",
+            "storage",
+            "tabs",
+            "webRequestBlocking",
+            "webRequest"
+        ],
+        "background": {
+            "scripts": [
+                "background.js"
+            ]
+        }
+    }
